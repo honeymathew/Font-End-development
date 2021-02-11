@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.wrapper1 {
+    width: 100%;
+
+}
+
+/*-----------first sectionn style------*/
+.intro-text {
+    width: 100%;
+
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    min-height: 80vh;
+    align-items: center;
+
+}
+
+.introduction {
+    flex: 1;
+}
+
+.intro-text h1 {
+    font-size: 44px;
+    font-weight: 900px;
+    line-height: 4px;
+
+}
+
+.intro-text h3 {
+    line-height: 40px;
+    margin-top: 40px;
+}
+
+
+.intro-text p {
+    margin-top: 1px 0px 10px;
+    font-size: 22px;
+    color: #585772;
+}
+
+.cta {
+    padding: 50px 0px 0px 0px;
+}
+
+.cta-select {
+
+    background: rgb(165, 120, 83);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+}
+
+
+
+.cover {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
+.cover img {
+
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width:800px) {
+    .presentation {
+        flex-direction: column;
+    }
+
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+        padding: 20px 0px 0px;
+    }
+
+    .introduction {
+        font-size: 30px;
+    }
+
+    .intro-text p {
+        font-size: 18px;
+    }
+
+    .cta {
+        padding: 10px 0px 0px 0px;
+    }
+}
+
+/*-----------first section style ends----------*/
+
+
+/*card section style*/
+.section1heading {
+    background-color: white;
+    margin-bottom: -60px;
+}
+
+.section1 h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.card-section {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    background-color: rgb(145, 233, 185);
+}
+
+.container1 {
+    margin-top: 10px;
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+
+}
+
+.container1 .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container1 .card:hover {
+    height: 420px;
+}
+
+.container1 .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container1 .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+
+
+}
+
+.container1 .card .content {
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: white;
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: justify;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container1 .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.outersection {
+    margin-top: -150px;
+}
+
+/* -----------section-card----------*/
+
+
+/*--------cloverflex card style-----*/
+.wrapper {
+    padding-top: 120px;
+}
+
+.row {
+    padding-bottom: 50px;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    text-align: center;
+
+}
+
+.card-body h6 {
+    font-size: 20px;
+    color: rgb(8, 8, 8);
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.cardhead {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 800px) {
+    .mx-30 {
+        margin-bottom: 30px;
+    }
+}
+
+/*--------cloverflex card style ends-----*/
+
+/*-----sectiongrid style------*/
+
+.sectionGrid {
+    margin: 10px;
+
+}
+
+.gridheading h1 {
+    text-align: center;
+}
+
+.my-container {
+
+    height: auto;
+    float: left;
+
+    padding: 30px;
+}
+
+.my-row {
+    margin: 40px;
+    padding: 20px;
+}
+
+li {
+    line-height: 40px;
+}
+
+.gridImage1 {
+    max-width: 100%;
+    height: auto;
+
+}
+
+@media (max-width: 800px) {
+    .sectionGrid {
+        margin-left: -20px;
+
+    }
+
+    .gridheading h1 {
+        width: 100%;
+        font-size: 30px;
+        margin-left: 40px;
+        margin-bottom: -60px;
+    }
+}
+
+
+/*-----sectiongrid style ends-----*/
+
+/*---------animation----------*/
+@keyframes fadeAndScale2 {
+    0% {
+        opacity: 0;
+        transform: scale3d(.75, .75, 1);
+    }
+
+    40% {
+        opacity: 0;
+        transform: scale3d(.75, .75, 1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.intro-text {
+    animation: fadeAndScale2 1s cubic-bezier(.39, -1.05, .58, 1.95);
+    transform-origin: center bottom;
+}
+
+/*---------------media queries---------------*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .presentation {
+        width: 100%;
+        padding: 10px 40px 20px 40px;
+    }
+
+    .wrapper {
+        padding: 10px 40px 20px 40px;
+    }
+
+    .section1heading {
+
+        padding: 10px 30px 0px 5px;
+    }
+
+    .gridheading {
+        padding: 10px 80px 20px 0px;
+    }
+
+    .section1 {
+        padding-right: 20px;
+    }
+
+    .card-section {
+        background-color: white;
+
+    }
+}
